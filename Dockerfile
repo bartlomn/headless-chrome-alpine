@@ -1,4 +1,5 @@
-FROM alpine:edge
+FROM node:lts-alpine
+LABEL maintainer="bnowak <bnowak@bnowak.com>"
 
 RUN apk --no-cache upgrade && apk add --no-cache chromium
 
